@@ -24,11 +24,10 @@ const languageList = ["EN", "FR", "ES", "DE"];
 
 const Navbar = () => {
   const [selectedLanguage, setSelectedLanguage] = React.useState("EN");
-
   return (
     <nav>
       <div className="flex justify-center">
-        <div className="hidden md:flex justify-between items-center h-14 max-w-6xl w-full">
+        <div className="hidden md:flex justify-between items-center h-[10vh] max-w-6xl w-full">
           <div>
             <Image
               src={"/assets/svgs/logo.svg"}
@@ -75,7 +74,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className="md:hidden flex justify-between border-b h-14 px-5">
+      <div className="md:hidden flex justify-between h-[10vh] px-5">
         <Image
           src={"/assets/svgs/logo.svg"}
           alt="Jadoo logo"
