@@ -1,17 +1,18 @@
 import Heading from "@/components/shared/heading";
+import ServiceCard from "@/components/shared/service-card";
 import Image from "next/image";
 import React, { ReactNode } from "react";
 
 const Services = () => {
   return (
-    <section className="min-h-[100vh] flex flex-col justify-center items-center">
+    <section className="min-h-[100vh] flex flex-col justify-center items-center mt-20 md:mt-0">
       <div className="text-center relative w-full">
         <h5 className="text-[#5E6282] text-sm font-semibold mb-2">CATEGORY</h5>
-        <Heading size="h3" className="text-5xl text-[#14183E]">
+        <Heading size="h3" className="text-4xl md:text-5xl text-[#14183E]">
           We Offer Best Services
         </Heading>
-        <div className="absolute -right-10 -top-3">
-          <div className="relative w-[100px] h-[100px]">
+        <div className="hidden md:block absolute -right-10 -top-5">
+          <div className="relative w-[110px] h-[110px]">
             <Image
               src={"/assets/svgs/service-design.svg"}
               alt=""
@@ -21,7 +22,7 @@ const Services = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mt-10">
+      <div className="relative grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-10 mt-16">
         <ServiceCard
           image={
             <div className="relative h-16 w-16">
@@ -38,7 +39,7 @@ const Services = () => {
         />
         <ServiceCard
           image={
-            <div className="relative h-20 w-24">
+            <div className="relative h-16 w-16">
               <Image
                 src={"/assets/svgs/flights.svg"}
                 alt=""
@@ -78,24 +79,12 @@ const Services = () => {
           title="Customization"
           description="We deliver outsourced aviation services for military customers"
         />
+        <div
+          style={{ height: "70px", width: "70px" }}
+          className="hidden md:block rounded-tl-3xl rounded-br-lg bg-[#DF6951] absolute -bottom-7 left-[23%] -z-40"
+        ></div>
       </div>
     </section>
-  );
-};
-
-type ServiceCardProps = {
-  image?: ReactNode;
-  title?: string;
-  description?: string;
-};
-
-const ServiceCard = ({ image, title, description }: ServiceCardProps) => {
-  return (
-    <div className="flex flex-col justify-center items-center gap-1.5 border rounded-3xl py-10 px-10">
-      {image}
-      <h5 className="text-[#14183E] font-semibold">{title}</h5>
-      <p className="text-center text-[#5E6282] text-sm">{description}</p>
-    </div>
   );
 };
 
