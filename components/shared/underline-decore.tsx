@@ -1,14 +1,6 @@
 import React from "react";
 
-const UnderlineDecore = ({
-  className,
-  width = "385",
-  height = "12",
-}: {
-  className?: string;
-  width?: string;
-  height?: string;
-}) => {
+const UnderlineDecore = ({ className }: { className?: string }) => {
   return (
     <svg
       viewBox="0 0 385 12"
