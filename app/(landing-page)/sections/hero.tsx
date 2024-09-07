@@ -23,17 +23,14 @@ const Hero = () => {
           size="h2"
           className="text-5xl md:text-7xl space-y-2 text-[#181E4B] text-center md:text-left"
         >
-          <div className="flex gap-4 md:gap-2">
-            <p>Travel,</p>
-            <p className="relative w-fit">
-              <span className="z-50">enjoy</span>
-              <span className="absolute bottom-0 md:bottom-0.5 -left-4 md:-left-16 -z-20">
-                <UnderlineDecore className="w-[220px] h-[10px] md:w-[400px] md:h-[10px]" />
-              </span>
-            </p>
-          </div>
-          <p className="mb-">and live a new</p>
-          <p>and full life</p>
+          Travel,{" "}
+          <span className="relative inline-block">
+            enjoy{" "}
+            <span className="absolute left-0 right-0 bottom-0 md:bottom-0.5 flex justify-center -z-20">
+              <UnderlineDecore />
+            </span>
+          </span>{" "}
+          and live a new and full life
         </Heading>
         <p className="text-sm w-[70%] text-[#5E6282] text-center md:text-left">
           Built Wicket longer admire do barton vanity itself do in it. Preferred

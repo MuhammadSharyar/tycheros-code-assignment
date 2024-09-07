@@ -1,3 +1,4 @@
+import BookingSteps from "./sections/booking-steps";
 import Destinations from "./sections/destinations";
 import Hero from "./sections/hero";
 import Services from "./sections/services";
@@ -9,6 +10,7 @@ export default function Home() {
         <Hero />
         <Services />
         <Destinations />
+        <BookingSteps />
       </div>
     </main>
   );

@@ -15,7 +15,7 @@ const Destinations = () => {
           Top Destinations
         </Heading>
       </div>
-      <div className="w-full flex justify-center flex-col md:flex-row gap-7 md:gap-10 mt-10 md:mt-16">
+      <div className="relative w-full flex justify-center flex-col md:flex-row gap-7 md:gap-10 mt-10 md:mt-16">
         <DestinationCard
           imageLink="/assets/images/rome.png"
           title="Rome, Italy"
@@ -34,6 +34,16 @@ const Destinations = () => {
           cost="$15k"
           duration="28 Days Trip"
         />
+        <div className="hidden md:block absolute right-14 bottom-10 -z-20">
+          <div className="relative w-[200px] h-[200px]">
+            <Image
+              src={"/assets/svgs/destination-decore.svg"}
+              alt=""
+              fill
+              className="absolute"
+            />
+          </div>
+        </div>
       </div>
     </section>
   );

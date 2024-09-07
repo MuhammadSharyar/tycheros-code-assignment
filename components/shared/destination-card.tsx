@@ -16,7 +16,7 @@ export const DestinationCard = ({
   duration,
 }: DestinationCardProps) => {
   return (
-    <div className="h-96 w-[90%] self-center md:self-auto md:w-auto rounded-3xl overflow-hidden border-0">
+    <div className="h-96 w-[85%] md:w-auto self-center md:self-auto  rounded-3xl overflow-hidden border-0 shadow-2xl shadow-[#E1E6E9]/50 ">
       <div className="relative h-full w-full md:w-[15.5rem]">
         <Image
           src={imageLink ?? ""}
@@ -24,7 +24,7 @@ export const DestinationCard = ({
           fill
           className="absolute object-cover -z-10"
         />
-        <div className="absolute bottom-0 w-full bg-white p-5 space-y-2">
+        <div className="absolute bottom-0 w-full bg-white px-5 py-7 space-y-3">
           <div className="flex justify-between items-center text-sm text-[#5E6282] font-medium">
             <h5>{title}</h5>
             <p>{cost}</p>

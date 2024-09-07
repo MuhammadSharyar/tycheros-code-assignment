@@ -3,7 +3,9 @@ import React from "react";
 const UnderlineDecore = ({ className }: { className?: string }) => {
   return (
     <svg
-      viewBox="0 0 385 12"
+      width={320}
+      height={12}
+      viewBox="0 0 320 12"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
@@ -13,10 +15,10 @@ const UnderlineDecore = ({ className }: { className?: string }) => {
         maskUnits="userSpaceOnUse"
         x="0"
         y="0"
-        width="385"
+        width="320"
         height="12"
       >
-        <rect width="385" height="12" fill="#C4C4C4" />
+        <rect width="320" height="12" fill="#C4C4C4" />
       </mask>
       <g mask="url(#mask0_420_4742)">
         <path
