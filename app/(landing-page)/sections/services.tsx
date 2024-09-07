@@ -7,8 +7,10 @@ const Services = () => {
   return (
     <section className="min-h-[100vh] flex flex-col justify-center items-center mt-20 md:mt-0">
       <div className="text-center relative w-full">
-        <h5 className="text-[#5E6282] text-sm font-semibold mb-2">CATEGORY</h5>
-        <Heading size="h3" className="text-4xl md:text-5xl text-[#14183E]">
+        <h5 className="text-[#5E6282] text-xs md:text-sm font-semibold mb-2">
+          CATEGORY
+        </h5>
+        <Heading size="h3" className="text-3xl md:text-5xl text-[#14183E]">
           We Offer Best Services
         </Heading>
         <div className="hidden md:block absolute -right-10 -top-5">
@@ -22,7 +24,7 @@ const Services = () => {
           </div>
         </div>
       </div>
-      <div className="relative grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-10 mt-16">
+      <div className="relative grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-10 mt-10 md:mt-16">
         <ServiceCard
           image={
             <div className="relative h-16 w-16">

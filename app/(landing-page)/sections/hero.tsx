@@ -57,7 +57,7 @@ const Hero = () => {
       </div>
       <div className="flex-1 mt-10 md:mt-0">
         <div className="relative">
-          <div className="relative w-[400px] h-[400px] md:w-[600px] md:h-[600px]">
+          <div className="relative w-[300px] h-[300px] md:w-[600px] md:h-[600px]">
             <Image
               src={"/assets/images/traveller.png"}
               alt=""
@@ -70,14 +70,14 @@ const Hero = () => {
             alt=""
             width={100}
             height={100}
-            className="absolute top-[5%] left-[15%] md:top-[10%] md:left-[20%]"
+            className="absolute top-0 left-[12%] md:top-[10%] md:left-[20%]"
           />
           <Image
             src={"/assets/svgs/plane.svg"}
             alt=""
             width={100}
             height={100}
-            className="absolute top-[20%] left-[70%] md:top-[25%] md:left-[85%] -z-10"
+            className="absolute top-[10%] left-[72%] md:top-[25%] md:left-[85%] -z-10"
           />
         </div>
       </div>
