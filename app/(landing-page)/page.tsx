@@ -2,6 +2,7 @@ import BookingSteps from "./sections/booking-steps";
 import Destinations from "./sections/destinations";
 import Hero from "./sections/hero";
 import Services from "./sections/services";
+import Testimonials from "./sections/testimonials";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <Services />
         <Destinations />
         <BookingSteps />
+        <Testimonials />
       </div>
     </main>
   );
