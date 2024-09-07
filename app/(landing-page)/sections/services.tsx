@@ -1,7 +1,7 @@
 import Heading from "@/components/shared/heading";
 import ServiceCard from "@/components/shared/service-card";
 import Image from "next/image";
-import React, { ReactNode } from "react";
+import React from "react";
 
 const Services = () => {
   return (

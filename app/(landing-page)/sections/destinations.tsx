@@ -1,6 +1,5 @@
 import DestinationCard from "@/components/shared/destination-card";
 import Heading from "@/components/shared/heading";
-import { Send } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 
