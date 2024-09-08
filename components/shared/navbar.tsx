@@ -13,6 +13,7 @@ import {
 import { ChevronDown, Menu } from "lucide-react";
 import {
   Sheet,
+  SheetClose,
   SheetContent,
   SheetHeader,
   SheetTitle,
@@ -108,17 +109,31 @@ const Navbar = () => {
               <ul className="space-y-2">
                 {navList.map((item) => (
                   <li key={item}>
-                    <Link href={"#"}>{item}</Link>
+                    <SheetClose asChild>
+                      <Link href={"#"} className="active:text-[#14183E]">
+                        {item}
+                      </Link>
+                    </SheetClose>
                   </li>
                 ))}
               </ul>
               <div className="flex flex-col gap-2">
-                <Button variant={"ghost"}>Login</Button>
-                <Button variant={"outline"}>Sign up</Button>
+                <Button
+                  variant={"ghost"}
+                  className="hover:bg-[#F1A501] hover:text-white active:bg-[#F1A501]/90"
+                >
+                  Login
+                </Button>
+                <Button
+                  variant={"outline"}
+                  className="border-[#212832] shadow-none hover:border-[#DF6951] hover:bg-[#DF6951] hover:text-white active:bg-[#DF6951]/90"
+                >
+                  Sign up
+                </Button>
               </div>
               <div>
                 <DropdownMenu>
-                  <DropdownMenuTrigger className="flex h-9 w-full items-center justify-between rounded-md border px-4 py-2 shadow-sm">
+                  <DropdownMenuTrigger className="flex h-9 w-full items-center justify-between rounded-md border border-[#212832] px-4 py-2">
                     <p>{selectedLanguage}</p>
                     <ChevronDown size={18} />
                   </DropdownMenuTrigger>
