@@ -11,10 +11,10 @@ import Image from "next/image";
 const NewsletterDialog = () => {
   return (
     <Dialog>
-      <DialogTrigger className="w-full text-white rounded-lg lg:px-5 lg:w-auto bg-gradient-to-b from-[#FF946D] to-[#FF7D68] h-12 hover:bg-gradient-to-b hover:from-[#FF946D]/95 hover:to-[#FF7D68]/95 hover:scale-105 active:scale-100 duration-150 transition-all">
+      <DialogTrigger className="h-12 w-full rounded-lg bg-gradient-to-b from-[#FF946D] to-[#FF7D68] text-white transition-all duration-150 hover:scale-105 hover:bg-gradient-to-b hover:from-[#FF946D]/95 hover:to-[#FF7D68]/95 active:scale-100 lg:w-auto lg:px-5">
         Subscribe
       </DialogTrigger>
-      <DialogContent className="bg-white w-[300px] lg:w-auto lg:h-auto rounded-xl overflow-hidden">
+      <DialogContent className="w-[300px] overflow-hidden rounded-xl bg-white lg:h-auto lg:w-auto">
         <DialogHeader>
           <DialogTitle className="text-[#14183E]">
             Welcome to the Jadoo Community!
@@ -29,7 +29,7 @@ const NewsletterDialog = () => {
           alt=""
           width={200}
           height={200}
-          className="absolute -top-1 -right-1 -z-30"
+          className="absolute -right-1 -top-1 -z-30"
         />
       </DialogContent>
     </Dialog>

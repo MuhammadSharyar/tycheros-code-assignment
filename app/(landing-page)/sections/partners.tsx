@@ -3,7 +3,7 @@ import React from "react";
 
 const Partners = () => {
   return (
-    <section className="min-h-[20vh] lg:min-h-[50vh] flex flex-wrap gap-10 lg:gap-20 justify-center items-center">
+    <section className="flex min-h-[20vh] flex-wrap items-center justify-center gap-10 lg:min-h-[50vh] lg:gap-20">
       <Image
         src={"/assets/images/partner-1.png"}
         alt=""
@@ -16,7 +16,7 @@ const Partners = () => {
         width={100}
         height={100}
       />
-      <div className="py-5 px-7 rounded-lg shadow-2xl shadow-[#E1E6E9]/50">
+      <div className="rounded-lg px-7 py-5 shadow-2xl shadow-[#E1E6E9]/50">
         <Image
           src={"/assets/images/partner-3.png"}
           alt=""

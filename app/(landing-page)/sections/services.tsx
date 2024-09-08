@@ -6,18 +6,18 @@ import React from "react";
 
 const Services = () => {
   return (
-    <section className="min-h-[100vh] flex flex-col justify-center items-center mt-20 lg:mt-0">
-      <div className="text-center relative w-full">
-        <h5 className="text-[#5E6282] text-xs lg:text-sm font-semibold mb-2">
+    <section className="mt-20 flex min-h-[100vh] flex-col items-center justify-center lg:mt-0">
+      <div className="relative w-full text-center">
+        <h5 className="mb-2 text-xs font-semibold text-[#5E6282] lg:text-sm">
           CATEGORY
         </h5>
-        <Heading size="h3" className="text-3xl lg:text-5xl text-[#14183E]">
+        <Heading size="h3" className="text-3xl text-[#14183E] lg:text-5xl">
           We Offer Best Services
         </Heading>
-        <div className="hidden lg:block absolute -right-10 -top-5">
-          <div className="relative w-[110px] h-[110px]">
+        <div className="absolute -right-5 -top-2 -z-20 md:-right-10 md:-top-5">
+          <div className="relative h-[110px] w-[110px]">
             <Image
-              src={"/assets/svgs/service-design.svg"}
+              src={"/assets/svgs/service-decore.svg"}
               alt=""
               fill
               className="absolute"
@@ -25,7 +25,7 @@ const Services = () => {
           </div>
         </div>
       </div>
-      <div className="relative grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-10 mt-10 lg:mt-16">
+      <div className="relative mt-10 grid grid-cols-2 gap-4 lg:mt-16 lg:grid-cols-4 lg:gap-10">
         {services.map((service) => (
           <ServiceCard
             key={service.title}
@@ -36,7 +36,7 @@ const Services = () => {
         ))}
         <div
           style={{ height: "70px", width: "70px" }}
-          className="hidden lg:block rounded-tl-3xl rounded-br-lg bg-[#DF6951] absolute -bottom-7 left-[23%] -z-40"
+          className="absolute -bottom-7 left-[23%] -z-40 hidden rounded-br-lg rounded-tl-3xl bg-[#DF6951] lg:block"
         ></div>
       </div>
     </section>

@@ -7,54 +7,54 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="flex flex-col lg:flex-row justify-between min-h-[90vh] mt-10 lg:mt-0">
+    <section className="mt-10 flex min-h-[90vh] flex-col justify-between lg:mt-0 lg:flex-row">
       <Image
         src={"/assets/svgs/decore.svg"}
         alt=""
         width={550}
         height={500}
-        className="absolute top-0 right-0 -z-30"
+        className="absolute right-0 top-0 -z-30"
       />
-      <div className="flex-1 flex flex-col gap-7 justify-center items-center lg:items-start">
-        <h4 className="text-[#DF6951] font-bold">
+      <div className="flex flex-1 flex-col items-center justify-center gap-7 lg:items-start">
+        <h4 className="font-bold text-[#DF6951]">
           BEST DESTINATION AROUND THE WORLD
         </h4>
         <Heading
           size="h2"
-          className="text-5xl lg:text-7xl space-y-2 text-[#181E4B] font-bold text-center lg:text-left leading-[3.5rem] lg:leading-[5.5rem]"
+          className="space-y-2 text-center text-5xl font-bold leading-[3.5rem] text-[#181E4B] lg:text-left lg:text-7xl lg:leading-[5.5rem]"
         >
           Travel,{" "}
           <span className="relative inline-block">
             enjoy{" "}
-            <span className="absolute left-0 right-0 bottom-0 lg:bottom-0.5 flex justify-center -z-20">
+            <span className="absolute bottom-0 left-0 right-0 -z-20 flex justify-center lg:bottom-0.5">
               <UnderlineDecore />
             </span>
           </span>{" "}
           and live a new and full life
         </Heading>
-        <p className="text-sm lg:w-[70%] text-[#5E6282] text-center lg:text-left leading-6">
+        <p className="text-center text-sm leading-6 text-[#5E6282] lg:w-[70%] lg:text-left">
           Built Wicket longer admire do barton vanity itself do in it. Preferred
           to sportsmen it engrossed listening. Park gate sell they west hard for
           the.
         </p>
-        <div className="flex gap-8 items-center">
-          <Button className="bg-[#F1A501] hover:bg-[#F1A501]/90 hover:scale-105 active:scale-100 transition-all duration-150 shadow-[#DF6951]/20 shadow-lg h-10 lg:h-12 px-5">
+        <div className="flex items-center gap-8">
+          <Button className="h-10 bg-[#F1A501] px-5 shadow-lg shadow-[#DF6951]/20 transition-all duration-150 hover:scale-105 hover:bg-[#F1A501]/90 active:scale-100 lg:h-12">
             Find out more
           </Button>
           <div className="flex items-center gap-4">
             <Button
               size={"icon"}
-              className="rounded-full h-10 lg:h-11 w-10 lg:w-11 bg-[#DF6951] hover:bg-[#DF6951]/90 hover:scale-105 active:scale-100 transition-all duration-150 shadow-[#DF6951]/20 shadow-lg"
+              className="h-10 w-10 rounded-full bg-[#DF6951] shadow-lg shadow-[#DF6951]/20 transition-all duration-150 hover:scale-105 hover:bg-[#DF6951]/90 active:scale-100 lg:h-11 lg:w-11"
             >
               <Play className="fill-white" size={18} />
             </Button>
-            <p className="text-[#686D77] font-medium">Play Demo</p>
+            <p className="font-medium text-[#686D77]">Play Demo</p>
           </div>
         </div>
       </div>
-      <div className="flex-1 mt-10 lg:mt-0">
+      <div className="mt-10 flex-1 lg:mt-0">
         <div className="relative">
-          <div className="relative w-[300px] h-[300px] lg:w-[600px] lg:h-[600px]">
+          <div className="relative h-[320px] w-[320px] lg:h-[600px] lg:w-[600px]">
             <Image
               src={"/assets/images/traveller.png"}
               alt=""
@@ -67,14 +67,14 @@ const Hero = () => {
             alt=""
             width={100}
             height={100}
-            className="absolute top-0 left-[12%] lg:top-[10%] lg:left-[20%]"
+            className="absolute left-[12%] top-0 lg:left-[20%] lg:top-[10%]"
           />
           <Image
             src={"/assets/svgs/plane.svg"}
             alt=""
             width={100}
             height={100}
-            className="absolute top-[10%] left-[72%] lg:top-[25%] lg:left-[85%] -z-10"
+            className="absolute left-[72%] top-[10%] -z-10 lg:left-[85%] lg:top-[25%]"
           />
         </div>
       </div>

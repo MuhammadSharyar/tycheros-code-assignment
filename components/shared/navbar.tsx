@@ -25,7 +25,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className="flex justify-center">
-        <div className="hidden lg:flex justify-between items-center h-[10vh] max-w-6xl w-full">
+        <div className="hidden h-[10vh] w-full max-w-6xl items-center justify-between lg:flex">
           <div>
             <Image
               src={"/assets/svgs/logo.svg"}
@@ -34,7 +34,7 @@ const Navbar = () => {
               height={80}
             />
           </div>
-          <div className="flex justify-between items-center text-xs gap-10">
+          <div className="flex items-center justify-between gap-10 text-xs">
             <ul className="flex gap-10">
               {navList.map((item) => (
                 <li key={item}>
@@ -48,21 +48,21 @@ const Navbar = () => {
               <Button
                 variant={"ghost"}
                 size={"sm"}
-                className="hover:bg-[#F1A501] active:bg-[#F1A501]/90 hover:text-white"
+                className="hover:bg-[#F1A501] hover:text-white active:bg-[#F1A501]/90"
               >
                 Login
               </Button>
               <Button
                 variant={"outline"}
                 size={"sm"}
-                className="border-[#212832] shadow-none hover:bg-[#DF6951] active:bg-[#DF6951]/90 hover:text-white hover:border-[#DF6951]"
+                className="border-[#212832] shadow-none hover:border-[#DF6951] hover:bg-[#DF6951] hover:text-white active:bg-[#DF6951]/90"
               >
                 Sign up
               </Button>
             </div>
             <div>
               <DropdownMenu>
-                <DropdownMenuTrigger className="flex gap-1 items-center">
+                <DropdownMenuTrigger className="flex items-center gap-1">
                   <p>{selectedLanguage}</p>
                   <ChevronDown size={18} />
                 </DropdownMenuTrigger>
@@ -82,7 +82,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className="lg:hidden flex justify-between h-[10vh] px-5">
+      <div className="flex h-[10vh] justify-between px-5 lg:hidden">
         <Image
           src={"/assets/svgs/logo.svg"}
           alt="Jadoo logo"
@@ -104,7 +104,7 @@ const Navbar = () => {
                 />
               </SheetTitle>
             </SheetHeader>
-            <div className="space-y-4 mt-10">
+            <div className="mt-10 space-y-4">
               <ul className="space-y-2">
                 {navList.map((item) => (
                   <li key={item}>
@@ -118,7 +118,7 @@ const Navbar = () => {
               </div>
               <div>
                 <DropdownMenu>
-                  <DropdownMenuTrigger className="w-full flex justify-between items-center border h-9 px-4 py-2 rounded-md shadow-sm">
+                  <DropdownMenuTrigger className="flex h-9 w-full items-center justify-between rounded-md border px-4 py-2 shadow-sm">
                     <p>{selectedLanguage}</p>
                     <ChevronDown size={18} />
                   </DropdownMenuTrigger>
