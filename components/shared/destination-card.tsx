@@ -3,23 +3,23 @@ import Image from "next/image";
 import React from "react";
 
 type DestinationCardProps = {
-  imageLink?: string;
+  imagePath?: string;
   title?: string;
   cost?: string;
   duration?: string;
 };
 
 export const DestinationCard = ({
-  imageLink,
+  imagePath,
   title,
   cost,
   duration,
 }: DestinationCardProps) => {
   return (
-    <div className="h-96 w-[85%] md:w-auto self-center md:self-auto  rounded-3xl overflow-hidden border-0 shadow-2xl shadow-[#E1E6E9]/50 ">
-      <div className="relative h-full w-full md:w-[15.5rem]">
+    <div className="h-96 w-[85%] lg:w-auto self-center lg:self-auto  rounded-3xl overflow-hidden border-0 shadow-2xl shadow-[#E1E6E9]/50">
+      <div className="relative h-full w-full lg:w-[15.5rem]">
         <Image
-          src={imageLink ?? ""}
+          src={imagePath ?? ""}
           alt=""
           fill
           className="absolute object-cover -z-10"

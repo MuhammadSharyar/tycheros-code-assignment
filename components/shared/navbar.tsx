@@ -18,16 +18,14 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-
-const navList = ["Destinations", "Hotels", "Flights", "Bookings"];
-const languageList = ["EN", "FR", "ES", "DE"];
+import { languageList, navList } from "@/constants";
 
 const Navbar = () => {
   const [selectedLanguage, setSelectedLanguage] = React.useState("EN");
   return (
     <nav>
       <div className="flex justify-center">
-        <div className="hidden md:flex justify-between items-center h-[10vh] max-w-6xl w-full">
+        <div className="hidden lg:flex justify-between items-center h-[10vh] max-w-6xl w-full">
           <div>
             <Image
               src={"/assets/svgs/logo.svg"}
@@ -40,15 +38,25 @@ const Navbar = () => {
             <ul className="flex gap-10">
               {navList.map((item) => (
                 <li key={item}>
-                  <Link href={"#"}>{item}</Link>
+                  <Link href={"#"} className="hover:text-[#14183E]">
+                    {item}
+                  </Link>
                 </li>
               ))}
             </ul>
             <div className="space-x-4">
-              <Button variant={"ghost"} size={"sm"}>
+              <Button
+                variant={"ghost"}
+                size={"sm"}
+                className="hover:bg-[#F1A501] active:bg-[#F1A501]/90 hover:text-white"
+              >
                 Login
               </Button>
-              <Button variant={"outline"} size={"sm"}>
+              <Button
+                variant={"outline"}
+                size={"sm"}
+                className="border-[#212832] shadow-none hover:bg-[#DF6951] active:bg-[#DF6951]/90 hover:text-white hover:border-[#DF6951]"
+              >
                 Sign up
               </Button>
             </div>
@@ -74,7 +82,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className="md:hidden flex justify-between h-[10vh] px-5">
+      <div className="lg:hidden flex justify-between h-[10vh] px-5">
         <Image
           src={"/assets/svgs/logo.svg"}
           alt="Jadoo logo"
